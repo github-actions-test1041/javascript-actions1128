@@ -29191,8 +29191,8 @@ function wrappy (fn, cb) {
 /***/ 1713:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
-const core = __nccwpck_require__(2186)
-const github = __nccwpck_require__(5438)
+const core = __nccwpck_require__(2186);
+const github = __nccwpck_require__(5438);
 
 /**
  * The main function for the action.
@@ -29218,9 +29218,9 @@ async function run() {
     });
 
     core.setOutput('issue', reponse.data);
-    
+
   } catch (error) {
-    core.setFailed(error.message)
+    core.setFailed(error.message);
   }
 }
 

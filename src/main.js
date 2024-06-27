@@ -1,5 +1,5 @@
-const core = require('@actions/core')
-const github = require('@actions/github')
+const core = require('@actions/core');
+const github = require('@actions/github');
 
 /**
  * The main function for the action.
@@ -25,9 +25,9 @@ async function run() {
     });
 
     core.setOutput('issue', reponse.data);
-    
+
   } catch (error) {
-    core.setFailed(error.message)
+    core.setFailed(error.message);
   }
 }
 
